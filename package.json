@@ -1,0 +1,27 @@
+{
+  "name": "lonely-hearts-club",
+  "version": "0.0.1",
+  "description": "Lonely Hearts club project for subcity.org",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SubcityRadio/lonely-hearts-club.git"
+  },
+  "keywords": [
+    "next.js"
+  ],
+  "author": "Bryan Mutai, Subcity Web Team",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SubcityRadio/lonely-hearts-club/issues"
+  },
+  "homepage": "https://github.com/SubcityRadio/lonely-hearts-club#readme",
+  "dependencies": {
+    "next": "^7.0.2",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0"
+  }
+}
