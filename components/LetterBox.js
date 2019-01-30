@@ -5,6 +5,7 @@ const LetterBox = props => (
       #letter-box {
         margin: auto;
         width: 65%;
+        max-width: 320px;
         border: 10px solid #ffff !important;
         padding-top: 3%;
         padding-inline-end: 3%;

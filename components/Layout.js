@@ -32,6 +32,9 @@ const Layout = props => (
         background-color: red;
         display: grid;
       }
+      button {
+        font-family: "Oswald", sans-serif;
+      }
     `}</style>
   </div>
 );
