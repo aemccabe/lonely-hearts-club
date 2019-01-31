@@ -29,7 +29,7 @@ input:not([type="checkbox"]) + label {
   left: 0;
   top: 0;
   pointer-events: none;
-  color: gray;
+  color: black;
 }
 
 /* Move the text input label up above the input when the input is focused */
@@ -37,8 +37,8 @@ input:not([type="checkbox"]) + label {
 input:not([type="checkbox"]):focus + label,
 .dirty input:not([type="checkbox"]) + label {
   font-size: 12px;
-  top: -12px;
-  color: black;
+  top: -20px;
+  color: white;
 }
 
 /* Reverse the order of the checkbox and its label, so that the checkbox appears to the right of the label without having to change the markup */
@@ -56,7 +56,7 @@ input {
 input,
 label,
 button[type="submit"] {
-  font-size: 20px;
+  font-size: 30px;
 }
 
 select {
@@ -64,7 +64,7 @@ select {
 }
 
 label {
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .custom-input-container,

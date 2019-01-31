@@ -4,8 +4,8 @@ const PictureBox = props => (
     <p> DRAW YOURSELF HERE</p>
     <style global jsx>{`
       #picture-box {
-        width: 50%;
-        height: 90%;
+        width: 75%;
+        height: 60%;
         border: 10px solid #ffff !important;
         display: grid;
       }
