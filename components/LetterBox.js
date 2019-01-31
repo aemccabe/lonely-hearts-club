@@ -3,7 +3,12 @@ const LetterBox = props => (
     {props.children}
     <style global jsx>{`
       #letter-box {
-        margin: auto;
+        margin-top: 5%;
+        margin-left: auto;
+        margin-right: auto;
+        marigin-bottom: auto;
+        min-width: 300px;
+        // margin: auto;
         width: 65%;
         max-width: 320px;
         border: 10px solid #ffff !important;

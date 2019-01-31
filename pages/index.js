@@ -23,7 +23,6 @@ export default class Index extends React.Component {
       <Provider store={store}>
         <Layout>
           <div id="header-section">
-            <PictureBox />
             <p id="header-tag-line">
               {" "}
               Join the <br />
@@ -32,22 +31,29 @@ export default class Index extends React.Component {
               <br /> club
             </p>
           </div>
+          <br />
           <LonelyHeartForm onSubmit={this.submit} />
 
           <style global jsx>{`
             #header-section {
               display: grid;
-              grid-template-columns: 1fr 1fr;
+              grid-template-columns: 1fr;
             }
             #header-tag-line {
               color: white;
               text-align: center;
-              font-size: 3rem;
+              font-size: xx-large;
               margin-block-start: 0em;
               margin-block-end: 0em;
               margin-inline-start: 0px;
               margin-inline-end: 0px;
             }
+            @media only screen and (min-width: 350px) {
+              #header-tag-line {
+                font-size: 3em;
+              }
+            }
+
             #question-section {
               display: grid;
             }
