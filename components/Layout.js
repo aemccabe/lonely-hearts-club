@@ -15,7 +15,7 @@ const Layout = props => (
       <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       <link 
-        href="https://fonts.googleapis.com/css?family=Indie+Flower" 
+        href="https://fonts.googleapis.com/css?family=Homemade+Apple" 
         rel="stylesheet" 
       />
     </Head>
@@ -26,14 +26,14 @@ const Layout = props => (
 
     <style global jsx>{`
       body {
-        font-family: 'Indie Flower', cursive;
+        font-family: 'Homemade Apple', cursive;
         letter-spacing: 0.05em;
         margin: 0;
         background-color: red;
         display: grid;
       }
       button {
-        font-family: 'Indie Flower', cursive;
+        font-family: 'Homemade Apple', cursive;
       }
     `}</style>
   </div>
