@@ -25,8 +25,9 @@ export default class Index extends React.Component {
           <div id="header-section">
             <p id="header-tag-line">
               {" "}
-              Join the <br />
-              lonely
+              Join <br />
+              Subcity Radio's 
+              <br /> lonely
               <br /> hearts
               <br /> club
             </p>
