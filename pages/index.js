@@ -1,9 +1,9 @@
 import Layout from "../components/Layout";
-import PictureBox from "../components/PicureBox";
 import { Provider } from "react-redux";
 import { createStore, combineReducers } from "redux";
 import { reducer as formReducer } from "redux-form";
 import LonelyHeartForm from "../components/LonelyHeartForm";
+import loadDB from "../lib/db.js";
 
 const reducers = {
   form: formReducer
@@ -15,7 +15,26 @@ let store = createStore(
 );
 export default class Index extends React.Component {
   submit = values => {
-    window.alert(JSON.stringify(values, null, 4));
+    const db = loadDB();
+    db.then(firestore => {
+      firestore
+        .collection("lonely-hearts")
+        .doc(values.name)
+        .set({
+          Name: values.name,
+          Likes: values.likes,
+          Dislikes: values.dislikes,
+          IdealDate: values.dreamdate
+        })
+        .then(function() {
+          console.log("Document successfully written!");
+        })
+        .catch(function(error) {
+          console.error("Error writing document: ", error);
+        });
+
+      window.alert(JSON.stringify(values, null, 4));
+    });
   };
 
   render() {
@@ -41,7 +60,7 @@ export default class Index extends React.Component {
               grid-template-columns: 1fr;
             }
             #header-tag-line {
-              color: white;
+              color: red;
               text-align: center;
               font-size: xx-large;
               margin-block-start: 0em;

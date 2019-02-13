@@ -29,7 +29,7 @@ const Layout = props => (
         font-family: 'Homemade Apple', cursive;
         letter-spacing: 0.05em;
         margin: 0;
-        background-color: red;
+        background-color: white;
         display: grid;
       }
       button {
