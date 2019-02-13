@@ -1,17 +1,19 @@
-const { PHASE_PRODUCTION_SERVER } =
-  process.env.NODE_ENV === "development"
-    ? {} // We're never in "production server" phase when in development mode
-    : !process.env.NOW_REGION
-    ? require("next/constants") // Get values from `next` package when building locally
-    : require("next-server/constants"); // Get values from `next-server` package when building on now v2
+const webpack = require("webpack");
+/**
+ * After the next require you can use process.env to get your secrets
+ */
+if (process.env.NODE_ENV !== "production") {
+  require("now-env");
+}
 
-module.exports = (phase, { defaultConfig }) => {
-  if (phase === PHASE_PRODUCTION_SERVER) {
-    // Config used to run in production.
-    return {};
+/**
+ * If some of the envs are public, like a google maps key, but you still
+ * want to keep them secret from the repo, the following code will allow you
+ * to share some variables with the client, configured at compile time.
+ */
+module.exports = {
+  target: "serverless",
+  env: {
+    FIREBASE_PROJECT_ID: "lonely-hearts"
   }
-
-  const withCSS = require("@zeit/next-css");
-
-  return withCSS();
 };
