@@ -9,16 +9,16 @@ export const validate = values => {
     errors.name = "Sorry, that's too long";
   }
 
-  if (!values.likes) {
-    errors.likes = "We need to know about your likes";
+  if (!values.anthem) {
+    errors.anthem = "What's your anthem";
   }
 
-  if (!values.dislikes) {
-    errors.dislikes = "We need to know about your dislikes";
+  if (!values.crush) {
+    errors.crush = "Who's your celebrity crush?";
   }
 
   if (!values.dreamdate) {
-    errors.dreamdate = "C'mon, what's your dream date like?";
+    errors.dreamdate = "C'mon, what's your dream date?";
   }
 
   return errors;

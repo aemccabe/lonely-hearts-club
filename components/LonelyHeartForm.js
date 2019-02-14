@@ -11,17 +11,17 @@ class LonelyHeartForm extends Component {
         <Field name="name" component={customInput} type="text" label="Name:" />
 
         <Field
-          name="likes"
+          name="anthem"
           component={customInput}
           type="text"
-          label="Likes:"
+          label="My Anthem:"
         />
 
         <Field
-          name="dislikes"
+          name="crush"
           component={customInput}
           type="text"
-          label="Dislikes:"
+          label="Celebrity Crush:"
         />
 
         <Field
@@ -31,7 +31,7 @@ class LonelyHeartForm extends Component {
           label="Dream Date:"
         />
 
-        <button type="submit">Next</button>
+        <button type="submit">Join</button>
         <style global jsx>{`
           #question-section {
             display: grid;
