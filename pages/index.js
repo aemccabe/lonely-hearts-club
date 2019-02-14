@@ -22,9 +22,9 @@ export default class Index extends React.Component {
         .doc(values.name)
         .set({
           Name: values.name,
-          Likes: values.likes,
-          Dislikes: values.dislikes,
-          IdealDate: values.dreamdate
+          Anthem: values.anthem,
+          Crush: values.crush,
+          DreamDate: values.dreamdate
         })
         .then(function() {
           console.log("Document successfully written!");
