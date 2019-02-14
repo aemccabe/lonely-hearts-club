@@ -44,8 +44,9 @@ export default class Index extends React.Component {
           <div id="header-section">
             <p id="header-tag-line">
               {" "}
-              Join the <br />
-              lonely
+              Join <br />
+              Subcity Radio's
+              <br /> lonely
               <br /> hearts
               <br /> club
             </p>
@@ -69,7 +70,7 @@ export default class Index extends React.Component {
             }
             @media only screen and (min-width: 350px) {
               #header-tag-line {
-                font-size: 3em;
+                font-size: 2em;
               }
             }
 
