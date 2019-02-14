@@ -16,12 +16,12 @@
   "keywords": [
     "next.js"
   ],
-  "author": "Bryan Mutai, Subcity Web Team",
+  "author": "Bryan Mutai, Astrid McCabe, Subcity Web Team",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/SubcityRadio/lonely-hearts-club/issues"
   },
-  "homepage": "https://github.com/SubcityRadio/lonely-hearts-club#readme",
+  "homepage": "https://lonelyhearts.subcity.org",
   "dependencies": {
     "classnames": "^2.2.6",
     "firebase": "^5.8.2",
